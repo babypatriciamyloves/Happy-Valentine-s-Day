@@ -6,8 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Valentine's Day Card</title>
     <link rel="stylesheet" href="style.css" />
+		<style>
+		.floating-image {
+		  position: fixed;
+		  top: 70%;
+		  left: 40%;
+		  transform: translate(-70%, -70%);
+		  animation: float 3s ease-in-out infinite;
+		  width: 400px; /* add a width value in pixels or other unit */
+		  height: auto; /* add a height value to preserve aspect ratio */
+		}
+
+@keyframes float {
+  0% {
+    transform: translate(-70%, -70%);
+  }
+	20% {
+		transform: translate(100%, 300%);
+	}
+  40% {
+    transform: translate(100%, -170%);
+  }
+	60% {
+		transform: translate(-110%, 100%);
+	}
+  80% {
+    transform: translate(-200%, -300%);
+  }
+	100%{
+		transform: translate(-70%, -70%);
+	}
+}
+</style>
   </head>
   <body>
+		<img class="floating-image" src="me pic.jpg" alt="Floating Image">
 		<div class="card-container">
   <div class="card">
     <div class="heart"></div>
