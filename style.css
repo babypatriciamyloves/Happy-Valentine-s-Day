@@ -190,3 +190,49 @@ h4 {
   transform: translateY(2px);
   box-shadow: none;
 }
+
+@media (max-width: 600px) {
+  body {
+    height: auto;
+  }
+  .floating-image {
+    scale: 0.5;
+  }
+
+  .card-container {
+    margin-top: 50px;
+    width: 90vw;
+    height: 85vh;
+  }
+
+  .card {
+    width: 90vw;
+    height: 90vh;
+  }
+
+
+  .heart {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  #reason {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    margin-top: 20px;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
